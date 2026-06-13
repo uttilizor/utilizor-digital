@@ -14,10 +14,10 @@
 **[Utilizor](https://www.utilizor.com/)** is a revolution in digital solutions, founded by **Muhammad Irfan Zafar** in 2019. We specialize in engineering premium digital ecosystems designed to drive massive revenue, maximize customer engagement, and scale your brand globally. From high-performance web applications to enterprise-grade custom software, we build the engine that runs your business.
 
 🌟 **Why Choose Us?**
-- **5+ Years Experience** in the digital landscape
-- **50+ Projects & Websites** managed successfully
+- **8+ Years Experience** in the digital landscape
+- **100+ Projects & Websites** managed successfully
 - **10K+ Tools Created** for developers and businesses
-- **98% Client Satisfaction** rate globally
+- **99% Client Satisfaction** rate globally
 
 ---
 
