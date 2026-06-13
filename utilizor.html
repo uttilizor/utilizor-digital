@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utilizor – Expert Digital Solutions Agency | Web, Mobile & Custom Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: '#020617',
+            foreground: '#f8fafc',
+            primary: '#3b82f6',
+            'primary-foreground': '#ffffff',
+            muted: '#1e293b',
+            'muted-foreground': '#94a3b8',
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 6s ease-in-out infinite 1.5s',
+            scroll: 'scroll 1.5s infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            scroll: {
+              '0%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(8px)' },
+              '100%': { transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { background-color: #020617; color: white; }
+    .bg-gradient-to-tr { background-image: linear-gradient(to top right, var(--tw-gradient-stops)); }
+    .bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
+    .bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+    .bg-gradient-to-l { background-image: linear-gradient(to left, var(--tw-gradient-stops)); }
+    .bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground font-sans antialiased overflow-x-hidden relative">
+
+  <!-- Header -->
+  <div class="fixed top-0 left-0 right-0 z-50 px-4 pt-4 pointer-events-none group">
+    <div class="relative mx-auto w-full max-w-7xl">
+      <div class="absolute -inset-20 bg-gradient-to-r from-blue-600/20 via-blue-400/10 to-cyan-600/20 rounded-[8rem] blur-[120px] opacity-60 animate-pulse pointer-events-none"></div>
+      <div class="w-full h-16">
+        <header class="relative w-full h-full bg-slate-950/90 backdrop-blur-3xl border border-white/20 rounded-2xl flex items-center shadow-2xl pointer-events-auto overflow-hidden">
+          <div class="flex w-full h-full items-center justify-between px-4 md:px-6">
+            <a href="https://www.utilizor.com/" class="flex items-center gap-2">
+              <div class="bg-primary p-1.5 rounded-md">
+                <i data-lucide="rocket" class="h-5 w-5 text-white"></i>
+              </div>
+              <span class="text-xl font-bold text-foreground">Utilizor</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-2">
+              <a href="https://www.utilizor.com/" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Home</a>
+              <a href="https://www.utilizor.com/tools" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">All Tools</a>
+              <a href="https://www.utilizor.com/ai-tools" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">AI Tools</a>
+              <a href="https://www.utilizor.com/products" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Products</a>
+              <a href="https://www.utilizor.com/services" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Services</a>
+              <a href="https://www.utilizor.com/games" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Games</a>
+              <a href="https://www.utilizor.com/learn" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Learn</a>
+              <a href="https://www.utilizor.com/blog" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Blog</a>
+              <a href="https://www.utilizor.com/prompts" class="text-sm font-medium text-muted-foreground transition-colors hover:text-primary px-3 py-2 rounded-md">Prompts</a>
+            </nav>
+            <div class="flex items-center gap-2">
+              <a href="https://www.utilizor.com/contact-us" class="hidden sm:inline-flex bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-blue-600 transition-colors">Contact Us</a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-1 mt-20">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-12 lg:py-0">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-blue-900/5 to-slate-900/10 animate-pulse"></div>
+      <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-float pointer-events-none"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float-delayed pointer-events-none"></div>
+      
+      <div class="container mx-auto px-4 md:px-6 relative z-10 w-full mt-8 sm:mt-0">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-100px)]">
+          <!-- Left Column -->
+          <div class="space-y-6 text-center lg:text-left flex flex-col justify-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full border border-blue-500/30 backdrop-blur-sm mx-auto lg:mx-0 w-fit">
+              <i data-lucide="rocket" class="h-3.5 w-3.5 text-yellow-400 animate-pulse"></i>
+              <span class="text-xs font-bold text-white tracking-wide">UTILIZOR</span>
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+              <span class="text-[10px] sm:text-xs font-medium text-blue-300">Available</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+              <span class="block mb-1 bg-gradient-to-r from-blue-400 via-blue-300 to-cyan-400 bg-clip-text text-transparent transform origin-left">
+                Transform Your Vision Into Reality
+              </span>
+              <span class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight">
+                With AI-Powered <span class="text-blue-500">Digital Solutions</span>
+              </span>
+            </h1>
+
+            <div class="space-y-4">
+              <p class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-tight">
+                Scale Your Business to the <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Next Level</span> with Utilizor Agency
+              </p>
+              <div class="space-y-2">
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-medium max-w-2xl mx-auto lg:mx-0">
+                  Specializing in high-performance <span class="text-blue-400">Web Development</span>, <span class="text-blue-400">Mobile Apps</span>, <span class="text-cyan-400">Custom Software</span>, and <span class="text-green-400">SEO</span>.
+                </p>
+                <p class="text-sm sm:text-base text-slate-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                  We engineer digital ecosystems designed to drive massive revenue, maximize customer engagement, and scale your brand globally.
+                </p>
+                <p class="text-xs sm:text-sm text-slate-500 leading-relaxed italic border-l-2 border-blue-500/30 pl-4 max-w-xl mx-auto lg:mx-0">
+                  From 10,000+ online tools to enterprise-grade solutions—<span class="text-blue-400 font-semibold">Utilizor delivers results that truly matter</span> for your strategic growth.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+              <a href="https://www.utilizor.com/contact-us" class="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-blue-700 text-white font-bold px-6 py-4 text-base shadow-xl shadow-blue-500/20 hover:scale-105 transition-all duration-200 rounded-full">
+                <i data-lucide="zap" class="h-5 w-5"></i> Start Project
+              </a>
+              <a href="https://www.utilizor.com/featured" class="flex items-center justify-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold px-6 py-4 text-base hover:scale-105 transition-all duration-200 rounded-full">
+                <i data-lucide="rocket" class="h-5 w-5"></i> Explore Tools
+              </a>
+            </div>
+
+            <div class="flex flex-col gap-4 pt-4">
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs sm:text-sm text-slate-400">
+                <div class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
+                  <i data-lucide="award" class="h-3.5 w-3.5 text-yellow-400"></i> <span class="font-medium">5+ Years Exp</span>
+                </div>
+                <div class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
+                  <i data-lucide="users" class="h-3.5 w-3.5 text-blue-400"></i> <span class="font-medium">50+ Projects</span>
+                </div>
+                <div class="flex items-center gap-1.5 bg-white/5 px-3 py-1.5 rounded-full border border-white/5">
+                  <i data-lucide="target" class="h-3.5 w-3.5 text-green-400"></i> <span class="font-medium">98% Success</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="relative flex items-center justify-center animate-float-delayed w-full h-auto mt-4 lg:mt-0">
+            <div class="relative z-10 w-full max-w-[350px] lg:max-w-[480px] group">
+              <div class="absolute -inset-8 bg-gradient-to-tr from-blue-600 via-blue-500 to-cyan-600 rounded-[3rem] blur-3xl opacity-40 animate-pulse group-hover:opacity-60 transition-opacity duration-500"></div>
+              <div class="border border-blue-500/30 rounded-3xl p-4 lg:p-8 bg-slate-950/80 backdrop-blur-md relative overflow-hidden">
+                <img src="https://www.utilizor.com/images/hero-icon.png" alt="Future Technology" class="relative w-full h-auto drop-shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:scale-110 transition-transform duration-700 object-contain z-10" />
+                <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block opacity-50 hover:opacity-100 cursor-pointer">
+        <div class="w-5 h-9 border-2 border-slate-500 rounded-full flex items-start justify-center p-1.5">
+          <div class="w-1 h-2 bg-slate-400 rounded-full animate-scroll"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600/10 to-blue-600/10 border-y border-white/10">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center space-y-2 group hover:scale-110 transition-transform duration-200">
+            <h3 class="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-400 transition-all">50+</h3>
+            <p class="text-slate-400 font-medium">Websites Managed</p>
+          </div>
+          <div class="text-center space-y-2 group hover:scale-110 transition-transform duration-200">
+            <h3 class="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-400 transition-all">10K+</h3>
+            <p class="text-slate-400 font-medium">Tools Created</p>
+          </div>
+          <div class="text-center space-y-2 group hover:scale-110 transition-transform duration-200">
+            <h3 class="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-400 transition-all">98%</h3>
+            <p class="text-slate-400 font-medium">Client Satisfaction</p>
+          </div>
+          <div class="text-center space-y-2 group hover:scale-110 transition-transform duration-200">
+            <h3 class="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-blue-400 transition-all">5+</h3>
+            <p class="text-slate-400 font-medium">Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative bg-slate-900/10 border-b border-slate-800/50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-20 space-y-4">
+          <h2 class="text-4xl md:text-6xl font-black text-white">Our <span class="text-blue-500">Services</span></h2>
+          <p class="max-w-2xl mx-auto text-slate-400 text-lg">Elite solutions crafted by a global team of developers, designers, and marketers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-purple-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="sparkles" class="h-8 w-8 text-purple-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">AI Development Services</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Intelligence reimagined. We build custom LLMs, intelligent chatbots, and predictive ML models to future-proof your business.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/ai-development" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-blue-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="code-2" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">Custom Software Development</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Tailored management systems for Medical, Retail, and Enterprise sectors. We build the engine that runs your business.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/custom-software-development" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-emerald-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="shopping-cart" class="h-8 w-8 text-emerald-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">E-Commerce Development</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">High-conversion online stores built with Shopify, Woo, and Custom stacks. Scale your retail business globally.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/ecommerce-development" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-cyan-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="laptop" class="h-8 w-8 text-cyan-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">Website Development</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Premium, high-performance web applications using Next.js, React, and modern tech stacks for a seamless user experience.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/web-development" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-rose-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="smartphone" class="h-8 w-8 text-rose-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">Mobile App Development</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Elite iOS and Android apps crafted with Flutter and React Native. Smooth performance and stunning UI for mobile users.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/mobile-app-development" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-amber-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="line-chart" class="h-8 w-8 text-amber-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">SEO & Local Ranking</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Dominate search engines and Google Maps. We drive high-intent organic traffic to your doorstep with proven SEO strategies.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/seo-services" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-indigo-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="megaphone" class="h-8 w-8 text-indigo-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">Digital Marketing</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Strategic growth campaigns across Google Ads, Social Media, and Email. We turn clicks into loyal customers.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/digital-marketing" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-pink-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="palette" class="h-8 w-8 text-pink-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">Graphic & Brand Design</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Visual identities that stick. Logos, UI/UX, and marketing assets that define your brand's personality.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/graphic-design" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-500 group overflow-hidden relative backdrop-blur-md rounded-xl flex flex-col">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div class="p-6 relative z-10 flex-grow">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 bg-red-400/10 group-hover:scale-110 transition-transform duration-500">
+                <i data-lucide="youtube" class="h-8 w-8 text-red-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-4">YouTube Automation</h3>
+              <p class="text-slate-400 text-lg leading-relaxed">Complete channel management, automated content creation, and scaling strategies for passive income streams.</p>
+            </div>
+            <div class="p-6 pt-4 border-t border-slate-800 relative z-10 mt-auto">
+              <a href="https://www.utilizor.com/services/youtube-automation" target="_blank" class="text-blue-500 font-bold flex items-center group/link">
+                Learn More <i data-lucide="arrow-right" class="ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-2"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Utilizor Section -->
+    <section class="py-24 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950"></div>
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative animate-fade-in-right order-2 lg:order-1">
+            <div class="relative z-10 rounded-3xl overflow-hidden border-4 border-blue-500/30 shadow-2xl hover:scale-[1.02] transition-transform duration-500 group">
+              <img src="https://www.utilizor.com/images/founder.png" alt="Muhammad Irfan Zafar - Founder of Utilizor" class="w-full h-auto object-cover" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-blue-500/20 rounded-3xl blur-3xl -z-10"></div>
+          </div>
+          <div class="space-y-6 order-1 lg:order-2">
+            <div class="space-y-4">
+              <span class="inline-block bg-blue-600/20 text-blue-300 border border-blue-500/50 px-4 py-2 rounded-full text-sm font-semibold">About Utilizor</span>
+              <h2 class="text-4xl md:text-6xl font-black text-white leading-tight">
+                Building Digital Excellence <span class="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">Since 2019</span>
+              </h2>
+            </div>
+            <p class="text-xl text-slate-300 leading-relaxed">
+              <span class="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text">Utilizor</span> is not just a company—it's a revolution in digital solutions. Founded by <span class="text-blue-400 font-semibold">Muhammad Irfan Zafar</span>, we combine cutting-edge AI technology with creative innovation to deliver solutions that don't just meet expectations—they exceed them.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 transition-colors">
+                <i data-lucide="rocket" class="h-8 w-8 text-blue-400 flex-shrink-0 mt-1"></i>
+                <div>
+                  <h3 class="text-lg font-bold text-white mb-1">Our Mission</h3>
+                  <p class="text-slate-400">Empower businesses with innovative digital solutions that drive growth, efficiency, and success in the modern digital landscape.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-purple-500/50 transition-colors">
+                <i data-lucide="target" class="h-8 w-8 text-blue-400 flex-shrink-0 mt-1"></i>
+                <div>
+                  <h3 class="text-lg font-bold text-white mb-1">Our Vision</h3>
+                  <p class="text-slate-400">To be the world's most trusted partner for digital transformation, making advanced technology accessible to businesses of all sizes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a href="https://www.utilizor.com/utilizor-digital" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-blue-700 text-white font-bold px-6 py-3 rounded-md shadow-lg transition-all">Learn More About Us</a>
+              <a href="https://www.utilizor.com/contact-us" class="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-md font-bold transition-all">Partner With Utilizor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Areas of <span class="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">Expertise</span></h2>
+          <p class="text-xl text-slate-400 max-w-2xl mx-auto">Combining technical skills with creative thinking to deliver exceptional results</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <div class="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i data-lucide="code" class="h-8 w-8 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Full-Stack Development</h3>
+            <p class="text-slate-400 leading-relaxed">Building scalable web applications with modern technologies including Next.js, React, Node.js, and Laravel.</p>
+          </div>
+
+          <div class="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i data-lucide="video" class="h-8 w-8 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Content Creation</h3>
+            <p class="text-slate-400 leading-relaxed">Creating engaging content across multiple platforms, from blog articles to video tutorials and social media.</p>
+          </div>
+
+          <div class="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i data-lucide="trending-up" class="h-8 w-8 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">SEO & Digital Marketing</h3>
+            <p class="text-slate-400 leading-relaxed">Optimizing websites for search engines and implementing data-driven digital marketing strategies.</p>
+          </div>
+
+          <div class="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i data-lucide="smartphone" class="h-8 w-8 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Mobile App Development</h3>
+            <p class="text-slate-400 leading-relaxed">Crafting premium iOS and Android applications using Flutter, React Native, and native technologies for a global audience.</p>
+          </div>
+
+          <div class="group relative overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+              <i data-lucide="palette" class="h-8 w-8 text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">UI/UX Design</h3>
+            <p class="text-slate-400 leading-relaxed">Designing beautiful, user-friendly interfaces that enhance user experience and drive conversions.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-20 bg-slate-900/30">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Expertise Across Modern Technologies 💻 & Frameworks</h2>
+          <p class="text-xl text-slate-400 max-w-3xl mx-auto">Building scalable solutions with cutting-edge tools across web, mobile, AI, and cloud technologies</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="code" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">React</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Frontend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="code" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Next.js</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Frontend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="code" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">TypeScript</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Frontend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="code" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Vue.js</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Frontend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="palette" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">TailwindCSS</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Frontend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="server" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Node.js</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Backend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="code" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">C#</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Backend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="server" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Laravel</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Backend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="server" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Python</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Backend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="server" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Express</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Backend</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="database" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">MongoDB</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Database</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="database" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">PostgreSQL</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Database</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="database" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">MySQL</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Database</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="cloud" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Firebase</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Cloud</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="cloud" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">AWS</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Cloud</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="cloud" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Google Cloud</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Cloud</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="smartphone" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">React Native</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Mobile</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="smartphone" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">Flutter</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">Mobile</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="bot" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">OpenAI</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">AI</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="bot" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">TensorFlow</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">AI</span>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-blue-500/10 text-center p-6 flex flex-col items-center gap-3">
+              <div class="p-3 bg-blue-600/20 rounded-lg group-hover:bg-blue-600/30 transition-colors">
+                <i data-lucide="bot" class="h-8 w-8 text-blue-400"></i>
+              </div>
+              <h3 class="font-semibold text-white">LangChain</h3>
+              <span class="px-2 py-1 border border-slate-700 rounded-full text-xs text-slate-400">AI</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="portfolio" class="py-20">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Work <span class="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">Experience</span></h2>
+          <p class="text-xl text-slate-400 max-w-2xl mx-auto">My professional journey and the roles I've held throughout my career</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <a href="https://trendpikz.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/Trend-Pikz-2026-Viral-Trends-Innovative-Gadgets-Smart-Tech.png" alt="Trend Pikz" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2026</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Trend Pikz</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">A curated platform showcasing the world's most viral gadgets, innovative tech, and smart lifestyle products with AI-powered discovery.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Next.js</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">E-commerce</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">AI</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Trending</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.utilizor.com/darul-quran-app" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/darul-quran/banner.png" alt="Darul Quran: Quran & Prayer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2026</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Mobile Apps</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Darul Quran: Quran & Prayer</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">All-in-one Islamic Super App featuring Quran, Prayer times, Hadith, Academy, and Qibla. Developed for the global Ummah with a premium Gold & Green interface.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Flutter</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Firebase</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Dart</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">AI Integration</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.utilizor.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/darul-quran-saeedia.png" alt="Jamia Saeedia Darul Quran" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2024</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Jamia Saeedia Darul Quran</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Official platform featuring Quran, Hadith, Prayer times, Salah guide and 40+ Islamic tools.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Islamic Tools</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Education</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.animalvised.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/animal-vised-official.png" alt="Animal Vised" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2025</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Animal Vised</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Comprehensive platform for pet owners with expert advice, premium products, and interactive learning.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">E-commerce</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Blog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://alharamservice.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/alharam-services.png" alt="Alharam Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2025</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Alharam Services</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Trusted Real Estate, Aluminum, and Construction Company platform in Multan Pakistan.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Real Estate</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Business</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.ashtartradetest.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/ashtar-trade-test.png" alt="Ashtar Trade Test Centre" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2025</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Ashtar Trade Test Centre</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Overseas Employment and Technical Training Centre platform for career building abroad.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Training</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Recruitment</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jamiasaeediadarulquran.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/jamia-saeedia-official.png" alt="Jamia Saeedia Education" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2025</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">Jamia Saeedia Education</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Online portal for Quranic education, Hifz, Tajweed, and Islamic studies enrollment.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">LMS</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Education</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.newsplusglobe.com/" target="_blank" rel="nofollow noopener noreferrer" class="block h-full">
+            <div class="group h-full overflow-hidden bg-slate-900/50 border border-slate-800 rounded-xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col">
+              <div class="relative h-48 overflow-hidden shrink-0">
+                <img src="https://www.utilizor.com/images/portfolio/news-plus-globe.png" alt="News Plus Globe" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute top-3 right-3">
+                  <span class="bg-blue-600/90 text-white px-2 py-1 rounded text-xs font-bold">2025</span>
+                </div>
+                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white font-bold border-2 border-white px-4 py-2 rounded-full transform scale-90 group-hover:scale-100 transition-transform">Visit Site</span>
+                </div>
+              </div>
+              <div class="p-6 space-y-4 flex flex-col flex-grow">
+                <div>
+                  <span class="inline-block px-2 py-1 border border-purple-500/50 rounded-full text-blue-400 text-xs mb-2">Websites</span>
+                  <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">News Plus Globe</h3>
+                </div>
+                <p class="text-slate-400 line-clamp-3 mb-auto">Trusted source for latest breaking news, in-depth analysis, politics, technology, and sports.</p>
+                <div class="flex flex-wrap gap-2 mt-auto pt-4">
+                  <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">WordPress</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">News</span><span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded-full whitespace-nowrap">Media</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-slate-900/30">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Technical <span class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">Skills</span></h2>
+          <p class="text-xl text-slate-400 max-w-2xl mx-auto">Proficient in modern technologies and frameworks</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Next.js</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Frontend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">React</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Frontend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">TypeScript</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Frontend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Node.js</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Backend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Laravel</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Backend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Firebase</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Backend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">TailwindCSS</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Frontend</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">SEO</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Marketing</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 98%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Content Writing</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Content</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">Video Production</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">Content</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">AI Tools</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">AI</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-white font-semibold">WordPress</span>
+              <span class="px-2 py-0.5 border border-blue-500/50 rounded text-xs text-blue-400">CMS</span>
+            </div>
+            <div class="h-3 bg-slate-800 rounded-full overflow-hidden">
+              <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 group-hover:from-orange-500 group-hover:to-pink-500" style="width: 98%"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">What Clients <span class="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">Say</span></h2>
+          <p class="text-xl text-slate-400 max-w-2xl mx-auto">Don't just take my word for it. Here's what my clients have to say about working with me.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 space-y-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10">
+            <div class="flex gap-1"><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i></div>
+            <i data-lucide="quote" class="h-10 w-10 text-blue-400/20"></i>
+            <p class="text-lg text-slate-300 italic leading-relaxed">"Muhammad delivered an exceptional website for our business. His attention to detail and technical expertise is unmatched. Highly recommended!"</p>
+            <div class="flex items-center gap-4">
+              <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson" class="w-14 h-14 rounded-full border-2 border-blue-500/30" />
+              <div>
+                <h4 class="font-bold text-white">Sarah Johnson</h4>
+                <p class="text-sm text-slate-400">CEO, TechStart Inc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 space-y-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10">
+            <div class="flex gap-1"><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i></div>
+            <i data-lucide="quote" class="h-10 w-10 text-blue-400/20"></i>
+            <p class="text-lg text-slate-300 italic leading-relaxed">"Outstanding work on our e-commerce platform. The SEO optimization brought us 300% more traffic in just 3 months!"</p>
+            <div class="flex items-center gap-4">
+              <img src="https://i.pravatar.cc/150?img=2" alt="Ahmed Khan" class="w-14 h-14 rounded-full border-2 border-blue-500/30" />
+              <div>
+                <h4 class="font-bold text-white">Ahmed Khan</h4>
+                <p class="text-sm text-slate-400">Founder, Digital Bazaar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 space-y-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10">
+            <div class="flex gap-1"><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i></div>
+            <i data-lucide="quote" class="h-10 w-10 text-blue-400/20"></i>
+            <p class="text-lg text-slate-300 italic leading-relaxed">"A true professional who understands both code and content. Our blog engagement has doubled since working with him."</p>
+            <div class="flex items-center gap-4">
+              <img src="https://i.pravatar.cc/150?img=3" alt="Emily Chen" class="w-14 h-14 rounded-full border-2 border-blue-500/30" />
+              <div>
+                <h4 class="font-bold text-white">Emily Chen</h4>
+                <p class="text-sm text-slate-400">Marketing Director, ContentHub</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-8 space-y-6 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10">
+            <div class="flex gap-1"><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i><i data-lucide="star" class="h-5 w-5 fill-yellow-400 text-yellow-400 inline-block"></i></div>
+            <i data-lucide="quote" class="h-10 w-10 text-blue-400/20"></i>
+            <p class="text-lg text-slate-300 italic leading-relaxed">"Fantastic developer and content creator. The custom app he built exceeded all our expectations!"</p>
+            <div class="flex items-center gap-4">
+              <img src="https://i.pravatar.cc/150?img=4" alt="David Martinez" class="w-14 h-14 rounded-full border-2 border-blue-500/30" />
+              <div>
+                <h4 class="font-bold text-white">David Martinez</h4>
+                <p class="text-sm text-slate-400">CTO, InnovateLab</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Agency Expertise Section (Phase 3 SEO Upgrade) -->
+    <section class="py-24 bg-black relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="text-center mb-20 space-y-6">
+          <span class="inline-block border border-blue-400/30 text-blue-400 uppercase tracking-[0.3em] px-6 py-2 rounded-full font-bold text-sm">Comprehensive Digital Agency</span>
+          <h2 class="text-4xl md:text-6xl font-black text-white leading-tight">Enterprise-Grade <span class="text-blue-500">Digital Solutions</span></h2>
+          <p class="text-xl text-slate-400 max-w-3xl mx-auto font-medium">Beyond standard services, we engineer complex digital ecosystems designed for massive scale and operational excellence.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group p-8 rounded-[2rem] bg-slate-900/40 border border-white/5 hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-400 p-4 mb-8 shadow-xl group-hover:scale-110 transition-transform"><i data-lucide="laptop" class="w-full h-full text-white"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Web Development</h3>
+            <p class="text-slate-400 leading-relaxed text-sm">High-performance, secure, and SEO-optimized web platforms built with Next.js and React. From corporate sites to complex web applications.</p>
+          </div>
+          <div class="group p-8 rounded-[2rem] bg-slate-900/40 border border-white/5 hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600 to-pink-400 p-4 mb-8 shadow-xl group-hover:scale-110 transition-transform"><i data-lucide="smartphone" class="w-full h-full text-white"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Mobile App Development</h3>
+            <p class="text-slate-400 leading-relaxed text-sm">Native-quality mobile experiences for iOS and Android. Cross-platform excellence ensuring sub-second interactions and high user retention.</p>
+          </div>
+          <div class="group p-8 rounded-[2rem] bg-slate-900/40 border border-white/5 hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 p-4 mb-8 shadow-xl group-hover:scale-110 transition-transform"><i data-lucide="monitor" class="w-full h-full text-white"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Desktop Applications</h3>
+            <p class="text-slate-400 leading-relaxed text-sm">Powerful cross-platform desktop software designed for productivity and performance. We build tools that run natively on Windows, macOS, and Linux.</p>
+          </div>
+          <div class="group p-8 rounded-[2rem] bg-slate-900/40 border border-white/5 hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-400 p-4 mb-8 shadow-xl group-hover:scale-110 transition-transform"><i data-lucide="code" class="w-full h-full text-white"></i></div>
+            <h3 class="text-2xl font-bold text-white mb-4">Custom Software</h3>
+            <p class="text-slate-400 leading-relaxed text-sm">Bespoke software solutions tailored to your unique business logic. Automate workflows and streamline operations with precision-engineered code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategic SEO Content Expansion -->
+    <section class="py-24 bg-slate-950 text-slate-300">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="space-y-6">
+            <h2 class="text-3xl md:text-5xl font-black text-white leading-tight">Your Premier <span class="text-blue-500">Software Development Company</span> in Multan & Beyond</h2>
+            <p class="text-lg leading-relaxed">In the rapidly evolving landscape of 2026, finding a reliable <strong>software development company</strong> is critical for business survival. At Utilizor, we don't just write code; we architect solutions. Whether you are searching for a "<strong>website development company near me</strong>" or looking for international-grade <strong>custom software development</strong>, our team provides the technical maturity and strategic insight needed to dominate your market.</p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center"><i data-lucide="code" class="w-5 h-5 text-blue-500"></i></div> Custom Software Ecosystems
+              </h3>
+              <p class="text-sm leading-relaxed">As a leading <strong>custom software development company</strong>, we specialize in building enterprise-grade ecosystems. Our expertise covers the full spectrum of modern engineering, from high-performance <strong>Desktop Applications</strong> for Windows and MacOS to complex <strong>Custom Software</strong> designed to automate your unique business workflows.</p>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center"><i data-lucide="smartphone" class="w-5 h-5 text-purple-500"></i></div> Mobile App Mastery
+              </h3>
+              <p class="text-sm leading-relaxed">Our reputation as a premier <strong>mobile app development company</strong> is built on delivering native-quality performance. We develop scalable <strong>Mobile Apps</strong> for both iOS and Android, ensuring your business stays accessible to your customers 24/7 with zero latency and high engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local SEO & Global Presence Section (Phase 4) -->
+    <section class="py-24 relative overflow-hidden bg-slate-900/20">
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold uppercase tracking-widest">
+              <i data-lucide="map-pin" class="w-4 h-4"></i> Multan HQ & Global Reach
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white leading-tight">Our Local Roots, <br/><span class="text-blue-500">Global Excellence</span></h2>
+            <p class="text-xl text-slate-300 leading-relaxed">Strategically headquartered in Multan, Pakistan, we combine local accessibility with world-class engineering standards. Whether you're a local business in Multan or an enterprise in New York, we deliver the same precision-grade digital solutions.</p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <h4 class="text-white font-bold mb-1">Physical Presence</h4>
+                <p class="text-slate-400 text-sm">Visit our Multan Tech Hub for a strategic consultation.</p>
+              </div>
+              <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
+                <h4 class="text-white font-bold mb-1">Trusted Globally</h4>
+                <p class="text-slate-400 text-sm">Serving clients across 15+ countries from our central hub.</p>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/9Qh3Rz4N2k8K8" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-3 font-semibold transition-colors">Get Directions on Google Maps</a>
+          </div>
+          <div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10 h-[500px]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.110991928134!2d71.5128438747732!3d30.233911209570408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b353f5c35e603%3A0xdc1c7a1500817e9d!2sUtilizor%20%E2%80%93%20AI%20Web%2C%20Mobile%20App%20Development%20%26%20SEO%20Company%20in%20Multan!5e0!3m2!1sen!2s!4v1775739514510!5m2!1sen!2s" width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="filter grayscale invert contrast-125 brightness-75 opacity-80"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-slate-900/30">
+      <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="text-4xl md:text-5xl font-black text-white">Frequently Asked <span class="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">Questions</span></h2>
+        </div>
+        <div class="space-y-4">
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+            <h3 class="text-xl text-white font-bold mb-4">What services do you offer?</h3>
+            <p class="text-slate-400 leading-relaxed">I offer full-stack web development, mobile app development, AI integration, content creation, SEO optimization, and digital marketing services.</p>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+            <h3 class="text-xl text-white font-bold mb-4">How long have you been in the industry?</h3>
+            <p class="text-slate-400 leading-relaxed">I have over 5 years of professional experience in web development and content creation, managing 50+ websites and projects.</p>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+            <h3 class="text-xl text-white font-bold mb-4">What technologies do you work with?</h3>
+            <p class="text-slate-400 leading-relaxed">I specialize in modern tech stack including Next.js, React, Node.js, Laravel, Firebase, AWS, and various AI tools like OpenAI and LangChain.</p>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+            <h3 class="text-xl text-white font-bold mb-4">Do you work with international clients?</h3>
+            <p class="text-slate-400 leading-relaxed">Yes! I work with clients globally and am comfortable with remote collaboration across different time zones.</p>
+          </div>
+
+          <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-blue-500/30 transition-colors">
+            <h3 class="text-xl text-white font-bold mb-4">What's your typical project timeline?</h3>
+            <p class="text-slate-400 leading-relaxed">Project timelines vary based on scope. A typical website takes 2-4 weeks, while complex applications may take 2-3 months. I always provide detailed timelines upfront.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-500/20"></div>
+      <div class="container mx-auto px-4 md:px-6 relative z-10 text-center space-y-8">
+        <h2 class="text-4xl md:text-6xl font-black text-white">Let's Build Something <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Amazing</span></h2>
+        <p class="text-xl text-slate-300 max-w-2xl mx-auto">Ready to bring your ideas to life? Let's collaborate and create something extraordinary together.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://www.utilizor.com/contact-us" class="bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-bold px-10 py-5 rounded-md text-xl shadow-2xl shadow-orange-500/30 hover:scale-105 transition-transform duration-200">Start a Project</a>
+          <a href="https://www.utilizor.com/utilizor-digital" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 font-bold px-10 py-5 rounded-md text-xl backdrop-blur-sm hover:scale-105 transition-all duration-200">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative bg-slate-950 text-slate-300 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-5 pointer-events-none"></div>
+    <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent shadow-[0_0_15px_rgba(59,130,246,0.5)]"></div>
+    <div class="container mx-auto px-4 md:px-6 py-16 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-gradient-to-br from-blue-600 to-cyan-600 p-2 rounded-xl shadow-lg shadow-blue-500/20">
+              <i data-lucide="rocket" class="h-6 w-6 text-white"></i>
+            </div>
+            <p class="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-400">Utilizor</p>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed max-w-md">Your ultimate online toolbox. We provide a vast collection of free, professional-grade tools to enhance productivity, streamline tasks, and solve complex problems for professionals, students, and creatives.</p>
+        </div>
+        <div class="lg:col-span-1 hidden lg:block"></div>
+        <div class="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <p class="font-bold text-white mb-6 flex items-center gap-2"><span class="w-1 h-4 bg-blue-500 rounded-full"></span>Tools</p>
+            <ul class="space-y-3 text-sm">
+              <li><a href="https://www.utilizor.com/ai-tools" class="text-slate-400 hover:text-blue-400">AI Tools</a></li>
+              <li><a href="https://www.utilizor.com/tools" class="text-slate-400 hover:text-blue-400">SEO Tools</a></li>
+              <li><a href="https://www.utilizor.com/tools" class="text-slate-400 hover:text-blue-400">Calculators</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-white mb-6 flex items-center gap-2"><span class="w-1 h-4 bg-blue-500 rounded-full"></span>Company</p>
+            <ul class="space-y-3 text-sm">
+              <li><a href="https://www.utilizor.com/about-us" class="text-slate-400 hover:text-blue-400">About Us</a></li>
+              <li><a href="https://www.utilizor.com/blog" class="text-slate-400 hover:text-blue-400">Blog</a></li>
+              <li><a href="https://www.utilizor.com/contact-us" class="text-slate-400 hover:text-blue-400">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-white mb-6 flex items-center gap-2"><span class="w-1 h-4 bg-cyan-500 rounded-full"></span>Legal</p>
+            <ul class="space-y-3 text-sm">
+              <li><a href="https://www.utilizor.com/privacy-policy" class="text-slate-400 hover:text-cyan-400">Privacy Policy</a></li>
+              <li><a href="https://www.utilizor.com/terms-and-conditions" class="text-slate-400 hover:text-cyan-400">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-500">Copyright © 2026 <a href="https://www.utilizor.com/" class="text-slate-300 hover:text-blue-400">Utilizor.com</a>. All rights reserved.</p>
+        <div class="flex items-center gap-6 text-sm text-slate-500">
+          <span class="flex items-center gap-2"><i data-lucide="shield" class="h-4 w-4"></i> Secure SSL</span>
+          <span class="flex items-center gap-2"><i data-lucide="bot" class="h-4 w-4"></i> AI Powered</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
